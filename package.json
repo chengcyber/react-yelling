@@ -1,0 +1,8 @@
+{
+  "name": "react-yelling",
+  "version": "0.0.1",
+  "description": "make react yelling in every life cycle function",
+  "main": "dist/index.js",
+  "author": "CHENG LIU <liucheng.tech@outlook.com>",
+  "license": "MIT"
+}
