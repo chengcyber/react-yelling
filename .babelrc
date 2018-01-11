@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    "@babel/plugin-transform-spread",
+    "@babel/plugin-proposal-object-rest-spread",
+  ],
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": [
+          "ie>=11",
+          "Chrome>=31",
+          "Firefox>=52",
+          "Edge>=13",
+          "Safari>=8",
+          "Android>=4"
+        ],
+      },
+      "modules": false,
+    }],
+  ],
+}
