@@ -1,8 +1,8 @@
+const createDebug = require('debug')
 const yell = (externalConfig) => (klass) => {
 
   const DEFAULT_CONFIG = {
     predicate: true,       /* decide yell or not of the highest priority */
-    level: 'log',            /* log level */
 
     /* lifeCycelMethods */
     componentWillMount: true,
@@ -22,7 +22,6 @@ const yell = (externalConfig) => (klass) => {
 
   const {
     predicate,
-    level,
   } = config
 
   /* validation according to predicate */
@@ -32,19 +31,17 @@ const yell = (externalConfig) => (klass) => {
     return klass
   }
 
-  /* decide the level should be used */
-  const log = typeof console[level] === 'function' ? console[level] : console.log
-
   const yellHelper = (klass, funcName) => {
     const func = klass.prototype[funcName]
     return function(...args) {
       // TODO make log text configurable
+      const log = createDebug(klass.name)
+      createDebug.enable(klass.name)
       let argsText = ''
       if (args.length) {
-        argsText += 'with '
         args.forEach( arg => argsText += `${JSON.stringify(arg)} `)
       }
-      log(`${klass.name} is invoking ${funcName} ${argsText}`)
+      log(`'s ${funcName}: ${argsText}`)
 
       if (!func || typeof func !== 'function') {
         /* true for shouldComponentUpdate */

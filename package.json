@@ -24,7 +24,9 @@
     "build": "cross-env NODE_ENV=production rollup -c"
   },
   "homepage": "https://github.com/kimochg/react-yelling#readme",
-  "dependencies": {},
+  "dependencies": {
+    "debug": "^3.1.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.37",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.37",

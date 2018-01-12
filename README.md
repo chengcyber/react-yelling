@@ -24,7 +24,6 @@ export default A
 | param                     | type              | default | description                     |
 | ---                       | ---               | ---     | ---                             |
 | predicate                 | Boolean, Function | true    | yell or slience                 |
-| level                     | String            | 'log'   | log level                       |
 | componentWillMount        | Boolean           | true    | slience when false, same beblow |
 | render                    | Boolean           | true    |                                 |
 | componentDidMount         | Boolean           | true    |                                 |
