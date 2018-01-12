@@ -19,6 +19,10 @@ export default A
 
 ```
 
+# Screenshot
+
+![](assets/logout.png)
+
 # Config
 
 | param                     | type              | default | description                     |
