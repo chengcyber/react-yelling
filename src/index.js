@@ -6,8 +6,10 @@ const yell = (externalConfig) => (klass) => {
 
     /* lifeCycelMethods */
     componentWillMount: true,
+    render: true,
     componentDidMount: true,
     componentWillReceiveProps: true,
+    shouldComponentUpdate: true,
     componentWillUpdate: true,
     componentDidUpdate: true,
     componentWillUnmount: true,
