@@ -1,14 +1,29 @@
 {
   "name": "react-yelling",
   "version": "0.0.1",
-  "description": "make react yelling in every life cycle function",
-  "main": "dist/index.js",
+  "description": "flexible, configurable, log out every life cycle function",
+  "main": "build/index.js",
   "author": "CHENG LIU <liucheng.tech@outlook.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimochg/react-yelling.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimochg/react-yelling/issues"
+  },
+  "keywords": [
+    "react-component",
+    "react utils",
+    "rollup",
+    "log",
+    "life cycle"
+  ],
   "scripts": {
     "dev": "rollup -c",
     "build": "cross-env NODE_ENV=production rollup -c"
   },
+  "homepage": "https://github.com/kimochg/react-yelling#readme",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.37",
