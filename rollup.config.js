@@ -10,7 +10,7 @@ const DEV = process.env.NODE_ENV !== 'production'
 const config = {
   input: 'src/index.js',
   output: {
-    file: 'build/index.min.js',
+    file: 'dist/index.js',
     format: 'umd',
     name: 'yell',
   },

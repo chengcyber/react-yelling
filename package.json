@@ -1,8 +1,8 @@
 {
   "name": "react-yelling",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "flexible, configurable, log out every life cycle function",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "author": "CHENG LIU <liucheng.tech@outlook.com>",
   "license": "MIT",
   "repository": {
