@@ -55,7 +55,11 @@ yarn dev
 
 # Test
 
-not yet
+jest tests the react render correctly
+
+```
+yarn test
+```
 
 # License
 
