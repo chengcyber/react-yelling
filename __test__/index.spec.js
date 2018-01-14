@@ -1,6 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import yell from 'react-yelling'
+import { version } from '../package'
 
 /* Link Component For Test */
 const STATUS = {
@@ -65,4 +66,6 @@ test('react component works fine', () => {
   expect(tree).toMatchSnapshot();
 
 })
+
+console.log('TEST PACKAGE VERSION: ' + version)
 
